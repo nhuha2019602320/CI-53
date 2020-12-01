@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 1100px; margin: 0 auto;">
+        <h3>Webcomponent là gì ?</h3>
+        <p>Web component là tập hợp các Web APIs cho phép chúng ta tạo ra một thẻ HTML riêng, mang các đặc tính riêng, đóng gói, có thể tái sử dụng</p>
+        <p><b>Custom Elements.</b>Nói một cách đơn giản, đây là các thành phần HTML hợp lệ với các template, behaviors và tag name tùy chỉnh được tạo bằng một bộ API JavaScript.</p>
+        <h3>Ví dụ</h3>
+        <p>class SomeElement extends HTMLElement { ... };<br>
+            customElements.define('some-element', SomeElement, {...});</p>
+            <p><b>Shadow DOM:</b> một bộ API JavaScript cho phép đóng gói một cây DOM "ẩn" vào trong một element và kiểm soát các chức năng liên quan của element (đây là một DOM hoàn toàn tách biệt với DOM chính (main document DOM) ). Bằng cách này, chúng ta có thể giữ các chức năng của element ở mức độ private, để chúng có thể xử lý logic và style mà không hề gây xung đột với các phần bên ngoài.</p>
+            <h3>Ví Dụ</h3>
+        <p>let shadowRootInit = {mode: 'open'};<br>
+            let shadowroot = element.attachShadow(shadowRootInit); </p>
+        <p><b>HTML templates:</b> Bao gồm 2 element "template" và "slot" cho phép viết các mẫu html mà không hiển thị trong view. Những mẫu này có thể sử dụng lại nhiều lần.</p>
+    </div>
+    <script src="./graph.js"></script>
+</body>
+</html>
+
+
